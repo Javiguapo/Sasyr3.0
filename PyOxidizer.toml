@@ -1,0 +1,18 @@
+[package]
+name = "SASYR"
+version = "1.0"
+description = "Prototipo de SASYR"
+
+[[targets]]
+name = "sasyr"
+type = "bin"
+python = { version = "3.8", implementation = "cpython" }
+
+[[targets.modules]]
+name = "sasyr_module"
+path = "D:/Escritorio/Arqu/SASYR/SASYR.py"
+
+[[bin]]
+name = "sasyr"
+path = "sasyr_module.py"
+entry_point = "tu_modulo:main"
